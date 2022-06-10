@@ -24,7 +24,7 @@
   ],
   "scripts": {
     "setup": "yarn install && yarn allow-scripts",
-    "prepare": "yarn build",
+    "prepare": "npm run build",
     "lint:eslint": "eslint . --cache --ext js,ts",
     "lint:misc": "prettier '**/*.json' '**/*.md' '!CHANGELOG.md' '**/*.yml' --ignore-path .gitignore",
     "lint": "yarn lint:eslint && yarn lint:misc --check",
